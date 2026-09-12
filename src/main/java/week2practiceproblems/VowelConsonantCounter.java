@@ -10,16 +10,12 @@ public class VowelConsonantCounter {
         for (int i = 0; i < text.length(); i++) {
 
             char ch = text.charAt(i);
-
-            // Ignore spaces
+\
+    
             if (ch == ' ') {
                 continue;
             }
-
-            // Convert uppercase character to lowercase
             ch = Character.toLowerCase(ch);
-
-            // Check for vowel
             if (ch == 'a' || ch == 'e' || ch == 'i'
                     || ch == 'o' || ch == 'u') {
                 vowels++;
